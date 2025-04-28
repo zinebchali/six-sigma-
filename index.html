@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Calcul Six Sigma</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calcul Six Sigma</h1>
+
+        <label for="valeurs">Valeurs de contrôle (séparées par virgule):</label>
+        <input type="text" id="valeurs" placeholder="ex: 10.2, 10.5, 10.1, 10.3">
+
+        <label for="moyenneCible">Moyenne cible:</label>
+        <input type="number" id="moyenneCible" placeholder="ex: 10.0">
+
+        <label for="tea">Total Error Allowable (TEa) %:</label>
+        <input type="number" id="tea" placeholder="ex: 10">
+
+        <button onclick="calculer()">Calculer</button>
+
+        <div id="resultats"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
